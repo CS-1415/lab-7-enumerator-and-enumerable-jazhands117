@@ -1,22 +1,38 @@
 public class DoublyLinkedList<T> : IDoubleEndedCollection<T>
 {
-    private DoublyLinkedListNode<T>? _head = null;
-    private DoublyLinkedListNode<T>? _tail = null;
-    public int Length { get; } = 0;
+    private DNode<T>? _head = null;
+    private DNode<T>? _tail = null;
+    public int Length { get; private set; } = 0;
 
-    /*TODO: implement the methods of the interface
-    void AddLast(T value);  
-    void AddFirst(T value);
-    void RemoveFirst();     
-    void RemoveLast();                
-    void InsertAfter(DNode<T>, T value);
-    void RemoveByValue(T value);
-    void ReverseList();*/
+    //first and last implementation//
+    public T? First
+    {
+        get
+        {
+            if (_head != null)
+                return _head.Value;
+            else
+                return default;
+                //returns default value of T if list is empty//
+        }
+    }
+
+    public T? Last
+    {
+        get
+        {
+            if (_tail != null)
+                return _tail.Value;
+            else
+                return default;
+                //default depends on what value T is//
+        }
+    }
 
     //following pseudocode in lab//
-    void AddLast(T value)
+    public void AddLast(T value)
     {
-        var newNode = new DoublyLinkedListNode<T>(value);
+        var newNode = new DNode<T>(value);
         if (_head == null)
         {
             _head = newNode;
@@ -31,9 +47,9 @@ public class DoublyLinkedList<T> : IDoubleEndedCollection<T>
         Length++;
     }
 
-    void AddFirst(T value)
+    public void AddFirst(T value)
     {
-        var newNode = new DoublyLinkedListNode<T>(value);
+        var newNode = new DNode<T>(value);
         if (_head == null)
         {
             _head = newNode;
@@ -48,7 +64,7 @@ public class DoublyLinkedList<T> : IDoubleEndedCollection<T>
         Length++;
     }
 
-    void RemoveFirst()
+    public void RemoveFirst()
     {
         if (_head == null) return; //list is empty, can't remove//
 
@@ -65,7 +81,7 @@ public class DoublyLinkedList<T> : IDoubleEndedCollection<T>
         Length--; //decrement length//
     }
 
-    void RemoveLast()
+    public void RemoveLast()
     {
         if (_tail == null) return;
 
@@ -83,9 +99,9 @@ public class DoublyLinkedList<T> : IDoubleEndedCollection<T>
     }
 
     //inserts into the middle of the list somewhere//
-    void InsertAfter(DNode<T> node, T value)
+    public void InsertAfter(DNode<T> node, T value)
     {
-        var newNode = new DoublyLinkedListNode<T>(value);
+        var newNode = new DNode<T>(value);
         if (node == null) return; //node is null, can't insert//
 
         if (node == _tail) //if node is tail, add to end//
@@ -102,7 +118,7 @@ public class DoublyLinkedList<T> : IDoubleEndedCollection<T>
         }
     }
 
-    void RemoveByValue(T value)
+    public void RemoveByValue(T value)
     {
         if (_head == null) return; //list is empty, can't remove//
 
@@ -132,12 +148,12 @@ public class DoublyLinkedList<T> : IDoubleEndedCollection<T>
         //value not found, nothing removed//
     }
 
-    void ReverseList()
+    public void ReverseList()
     {
         if (_head == null || _head == _tail) return; //empty or single element, nothing to reverse//
 
         var current = _head;
-        DoublyLinkedListNode<T>? temp = null;
+        DNode<T>? temp = null;
 
         while (current != null)
         {
