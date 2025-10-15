@@ -122,6 +122,21 @@ public class DoublyLinkedList<T> : IDoubleEndedCollection<T>, IEnumerable<T>
         }
     }
 
+    //helper method to find a node by value for above//
+    public DNode<T>? FindNode(T value)
+    {
+        var current = _head;
+        while (current != null)
+        {
+            if (current.Value!.Equals(value))
+            {
+                return current; //value found//
+            }
+            current = current.Next;
+        }
+        return null; //value not found//
+    }
+
     public void RemoveByValue(T value)
     {
         if (_head == null) return; //list is empty, can't remove//
@@ -171,6 +186,19 @@ public class DoublyLinkedList<T> : IDoubleEndedCollection<T>, IEnumerable<T>
         temp = _head;
         _head = _tail;
         _tail = temp;
+    }
+
+    //display method for User Interface//
+    public void Display()
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("List contents:");
+        foreach (var item in this)
+        {
+            Console.Write(item + " ");
+        }
+        Console.WriteLine(); //for newline after displaying list//
+        Console.ForegroundColor = ConsoleColor.White;
     }
 
     //enumerator implementation//
