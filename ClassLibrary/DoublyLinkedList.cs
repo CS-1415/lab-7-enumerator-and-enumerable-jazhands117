@@ -1,4 +1,8 @@
-public class DoublyLinkedList<T> : IDoubleEndedCollection<T>
+using System.Collections;
+using System.Collections.Generic;
+namespace ClassLibrary;
+
+public class DoublyLinkedList<T> : IDoubleEndedCollection<T>, IEnumerable<T>
 {
     private DNode<T>? _head = null;
     private DNode<T>? _tail = null;
@@ -13,7 +17,7 @@ public class DoublyLinkedList<T> : IDoubleEndedCollection<T>
                 return _head.Value;
             else
                 return default;
-                //returns default value of T if list is empty//
+            //returns default value of T if list is empty//
         }
     }
 
@@ -25,7 +29,7 @@ public class DoublyLinkedList<T> : IDoubleEndedCollection<T>
                 return _tail.Value;
             else
                 return default;
-                //default depends on what value T is//
+            //default depends on what value T is//
         }
     }
 
@@ -167,5 +171,16 @@ public class DoublyLinkedList<T> : IDoubleEndedCollection<T>
         temp = _head;
         _head = _tail;
         _tail = temp;
+    }
+
+    //enumerator implementation//
+    public IEnumerator<T> GetEnumerator()
+    {
+        return new LinkedListEnumerator<T>(_head);
+    }
+    //non-generic enumerator implementation//
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
     }
 }
