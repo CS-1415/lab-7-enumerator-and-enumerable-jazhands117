@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ClassLibrary.Tests
-build_property.ProjectDir = C:\Users\Jasmine Johnson\my-code-dir\lab-6-doubly-linked-list-jazhands117\ClassLibrary.Tests\
+build_property.ProjectDir = C:\Users\Jasmine Johnson\my-code-dir\lab-7-enumerator-and-enumerable-jazhands117\ClassLibrary.Tests\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

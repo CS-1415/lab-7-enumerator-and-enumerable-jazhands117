@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NblToxm52BE=",
+  "dgSpecHash": "3f+QAane3LU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jasmine Johnson\\my-code-dir\\lab-6-doubly-linked-list-jazhands117\\ClassLibrary.Tests\\ClassLibrary.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Jasmine Johnson\\my-code-dir\\lab-7-enumerator-and-enumerable-jazhands117\\ClassLibrary.Tests\\ClassLibrary.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jasmine Johnson\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\Jasmine Johnson\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

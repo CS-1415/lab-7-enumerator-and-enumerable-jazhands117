@@ -1003,11 +1003,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jasmine Johnson\\my-code-dir\\lab-6-doubly-linked-list-jazhands117\\ClassLibrary.Tests\\ClassLibrary.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Jasmine Johnson\\my-code-dir\\lab-7-enumerator-and-enumerable-jazhands117\\ClassLibrary.Tests\\ClassLibrary.Tests.csproj",
       "projectName": "ClassLibrary.Tests",
-      "projectPath": "C:\\Users\\Jasmine Johnson\\my-code-dir\\lab-6-doubly-linked-list-jazhands117\\ClassLibrary.Tests\\ClassLibrary.Tests.csproj",
+      "projectPath": "C:\\Users\\Jasmine Johnson\\my-code-dir\\lab-7-enumerator-and-enumerable-jazhands117\\ClassLibrary.Tests\\ClassLibrary.Tests.csproj",
       "packagesPath": "C:\\Users\\Jasmine Johnson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jasmine Johnson\\my-code-dir\\lab-6-doubly-linked-list-jazhands117\\ClassLibrary.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Jasmine Johnson\\my-code-dir\\lab-7-enumerator-and-enumerable-jazhands117\\ClassLibrary.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jasmine Johnson\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1022,8 +1022,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Jasmine Johnson\\my-code-dir\\lab-6-doubly-linked-list-jazhands117\\ClassLibrary\\ClassLibrary.csproj": {
-              "projectPath": "C:\\Users\\Jasmine Johnson\\my-code-dir\\lab-6-doubly-linked-list-jazhands117\\ClassLibrary\\ClassLibrary.csproj"
+            "C:\\Users\\Jasmine Johnson\\my-code-dir\\lab-7-enumerator-and-enumerable-jazhands117\\ClassLibrary\\ClassLibrary.csproj": {
+              "projectPath": "C:\\Users\\Jasmine Johnson\\my-code-dir\\lab-7-enumerator-and-enumerable-jazhands117\\ClassLibrary\\ClassLibrary.csproj"
             }
           }
         }
@@ -1080,7 +1080,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.415/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
